@@ -1,0 +1,101 @@
+/* General Styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(180deg, #8E5FE8 0%, #7956D5 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Quiz Container */
+.quiz-container {
+  background: #fff;
+  width: 90%;
+  max-width: 400px;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+
+
+/* Question Box */
+.question-box {
+  padding: 15px;
+  border-radius: 10px;
+  background: #F5F5F5;
+}
+
+/* Question Number */
+.question-number {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Question Text */
+.question-text {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+/* Options */
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.option {
+  background: #fff;
+  border: 2px solid #7956D5;
+  color: #7956D5;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.option:hover {
+  background: #7956D5;
+  color: #fff;
+}
+
+/* Selected Option */
+.option.selected {
+  background: #FF7E45;
+  color: #fff;
+  border-color: #FF7E45;
+}
+
+/* Next Button */
+.next-button {
+  background: #7956D5;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.next-button:hover {
+  background: #5E3CAF;
+}
+
+/* Disabled Button */
+.next-button:disabled {
+  background: #ddd;
+  color: #888;
+  cursor: not-allowed;
+}
